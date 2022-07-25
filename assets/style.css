@@ -1,7 +1,18 @@
 .start-btn button {
   color: white;
   background-color: #c572ea;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+
+/* M O D A L */
+.modal-btns button {
+  color: white;
+  background-color: #c572ea;
+  border-radius: 15px;
   padding: 10px;
   border: none;
   width: 100px;
