@@ -8,7 +8,7 @@
 body {
   background-color: #351c74;
 }
-
+/* Start Quiz Button */
 .start-btn,
 .modal {
   position: absolute;
@@ -19,7 +19,7 @@ body {
 
 .start-btn button {
   color: white;
-  background-color: #c572ea;
+  background: #c572ea;
   border-radius: 5px;
   padding: 15px, 30px;
   width: 100px;
@@ -32,18 +32,9 @@ body {
 }
 
 /* M O D A L */
-.modal-btns button {
-  color: white;
-  background-color: #c572ea;
-  border-radius: 5px;
-  padding: 10px;
-  border: none;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
 
 .modal {
+  display: none;
   width: 540px;
   background-color: #fff;
   border-radius: 5px;
@@ -73,3 +64,45 @@ body {
   font-weight: 600px;
   color: #c572ea;
 }
+
+.modal .modal-btns {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 35px;
+}
+
+.modal .modal-btns button {
+  margin: 0px 5px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-btns button.enter {
+  color: #fff;
+  background: #351c74;
+}
+
+.modal-btns button.enter:hover {
+  background: #c572ea;
+}
+
+.modal-btns button.quit {
+  color: #351c74;
+}
+
+.modal-btns button.quit:hover {
+  color: #351c74;
+  background: #fff;
+  border: 1px solid #351c74;
+}
+
+/*
