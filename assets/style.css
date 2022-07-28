@@ -105,4 +105,20 @@ body {
   border: 1px solid #351c74;
 }
 
-/*
+/* A N S W E R  S T Y L I N G */
+.option button {
+  color: white;
+  background: #c572ea;
+  border-radius: 5px;
+  padding: 15px, 30px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.quiz-box button.option:hover {
+}
