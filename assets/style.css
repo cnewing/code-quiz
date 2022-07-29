@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: #351c74;
+  background-color: #fff;
 }
-/* Start Quiz Button */
+
 .start-btn,
 .modal,
 .quiz-box,
@@ -17,15 +17,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 8px 0 rgba(53, 28, 116, 0.1),
+    0px 6px 20px 0 rgba(53, 28, 116, 0.1);
 }
 
+/* Start Quiz Button */
 .start-btn button {
   color: white;
   background: #c572ea;
   border-radius: 5px;
-  padding: 15px, 30px;
-  width: 100px;
-  height: 40px;
+  padding: 30px, 45px;
+  width: 150px;
+  height: 60px;
   border: none;
   outline: none;
   font-size: 20px;
@@ -33,13 +36,22 @@ body {
   cursor: pointer;
 }
 
+.start-btn button:hover {
+  color: #c572ea;
+  background: #fff;
+  border: 1px solid #351c74;
+}
+
 /* M O D A L */
 
 .modal {
-  display: none;
   width: 540px;
   background-color: #fff;
   border-radius: 5px;
+  border: 2px solid #351c74;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50% scale(0.9));
 }
 
 .modal .modal-title {
@@ -109,11 +121,13 @@ body {
 
 /* Q U I Z  B O X  S T Y L I N G */
 .quiz-box {
-  display: none;
   width: 550px;
   height: 400px;
   background: #fff;
   border-radius: 5px;
+
+  pointer-events: none;
+  transform: translate(-50%, -50% scale(0.9));
 }
 
 .quiz-box header {
@@ -172,8 +186,10 @@ body {
 }
 
 .quiz-box section .q-text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .quiz-box section .answers {
@@ -186,7 +202,9 @@ body {
   border: 1px solid #c572ea;
   border-radius: 5px;
   padding: 8px 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 17px;
   display: flex;
   align-items: center;
@@ -248,6 +266,9 @@ section .answers .option:last-child {
   text-align: center;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50% scale(0.9));
 }
 
 .results .icon {
