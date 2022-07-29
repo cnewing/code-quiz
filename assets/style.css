@@ -10,7 +10,8 @@ body {
 }
 /* Start Quiz Button */
 .start-btn,
-.modal {
+.modal,
+.quiz-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,20 +106,122 @@ body {
   border: 1px solid #351c74;
 }
 
-/* A N S W E R  S T Y L I N G */
-.option button {
-  color: white;
-  background: #c572ea;
+/* Q U I Z  B O X  S T Y L I N G */
+.quiz-box {
+  width: 550px;
+  height: 400px;
+  background: #fff;
   border-radius: 5px;
-  padding: 15px, 30px;
-  width: 200px;
-  height: 40px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
 }
 
-.quiz-box button.option:hover {
+.quiz-box header {
+  position: relative;
+  z-index: 99;
+  height: 70px;
+  padding: 0 30px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0px 3px 5px 1px rgba(53, 28, 116, 0.1);
+}
+
+.quiz-box header .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.quiz-box header .timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+  height: 45px;
+  background: #f1b8ff;
+  border: 1px solid #c572ea;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.quiz-box header .timer .timer-text {
+  font-weight: 400;
+  font-size: 17px;
+  user-select: none;
+}
+
+.quiz-box header .timer .timer-sec {
+  font-size: 18px;
+  font-weight: 500;
+  background: #351c74;
+  height: 30px;
+  width: 45px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #351c74;
+  user-select: none;
+}
+
+.quiz-box .section {
+  padding: 25px 30px 20px 30px;
+  background: #fff;
+}
+
+.quiz-box section .q-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.quiz-box section .answers {
+  padding: 20px 0;
+  display: block;
+}
+
+.quiz-box section .answers .option {
+  background: #f1b8ff;
+  border: 1px solid #c572ea;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section .answers .option:hover {
+  color: #fff;
+  background: #c572ea;
+  border-color: #351c74;
+}
+
+section .answers .option:last-child {
+  margin-bottom: 0px;
+}
+
+.answers .option .icon {
+  height: 36px;
+  width: 26px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.answers .option .icon.tick {
+  border-color: greenyellow;
+  color: greenyellow;
+  background: #d4edda;
+}
+
+.answers .option .icon.cross {
+  color: #a42834;
+  background: #f8d7da;
+  border-color: #a42834;
 }
