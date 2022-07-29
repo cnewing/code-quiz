@@ -39,7 +39,7 @@ nextBtn.onclick = () => {
 // fetching questions and answers from array
 function showQuestions(index) {
   const questionText = document.querySelector(".q-text");
-  const answerText = document.querySelector(".answers");
+  const answerText = document.querySelector(".answers_list");
 
   let questionTag =
     "<span>" +
@@ -63,4 +63,14 @@ function showQuestions(index) {
     "<span></span></div>";
   questionText.innerHTML = questionTag;
   answerText.innerHTML = answerTag;
+
+  //const option = answers.querySelectoraAll(".option");
+  //for (let i = 0; i < answer.length; i++) {
+  // option[i].setAttribute("onclick", "optionSelected(this)");
+  //}
 }
+
+//function optionSelected(answer) {
+//let userAns = answer.textContent;
+//console.log(userAns);
+//}

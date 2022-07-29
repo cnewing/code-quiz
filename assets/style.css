@@ -200,12 +200,12 @@ body {
   margin-top: 20px;
 }
 
-.quiz-box section .answers {
+.quiz-box section .answers_list {
   padding: 20px 0;
   display: block;
 }
 
-.quiz-box section .answers .option {
+.quiz-box section .answers_list .option {
   background: #f1b8ff;
   border: 1px solid #c572ea;
   border-radius: 5px;
@@ -221,17 +221,17 @@ body {
   transition: all 0.3s ease;
 }
 
-section .answers .option:hover {
+section .answers_list .option:hover {
   color: #fff;
   background: #c572ea;
   border-color: #351c74;
 }
 
-section .answers .option:last-child {
+section .answers_list .option:last-child {
   margin-bottom: 0px;
 }
 
-.answers .option .icon {
+.answers_list .option .icon {
   height: 36px;
   width: 26px;
   border: 2px solid transparent;
@@ -242,13 +242,13 @@ section .answers .option:last-child {
   pointer-events: none;
 }
 
-.answers .option .icon.tick {
+.answers_list .option .icon.tick {
   border-color: #23903c;
   color: #23903c;
   background: #d4edda;
 }
 
-.answers .option .icon.cross {
+.answers_list .option .icon.cross {
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;
