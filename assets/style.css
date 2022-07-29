@@ -11,7 +11,8 @@ body {
 /* Start Quiz Button */
 .start-btn,
 .modal,
-.quiz-box {
+.quiz-box,
+.results {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,6 +109,7 @@ body {
 
 /* Q U I Z  B O X  S T Y L I N G */
 .quiz-box {
+  display: none;
   width: 550px;
   height: 400px;
   background: #fff;
@@ -215,8 +217,8 @@ section .answers .option:last-child {
 }
 
 .answers .option .icon.tick {
-  border-color: greenyellow;
-  color: greenyellow;
+  border-color: #23903c;
+  color: #23903c;
   background: #d4edda;
 }
 
@@ -224,4 +226,110 @@ section .answers .option:last-child {
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;
+}
+
+/*.quiz-box footer {
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* R E S U L T S  B O X */
+.results {
+  background-color: #fff;
+  width: 450px;
+  height: 400px;
+  padding: 25px 30 px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.results .icon {
+  font-size: 100px;
+  color: #351c74;
+  margin-top: 20px;
+}
+
+.results .complete {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.score {
+  font-size: 15px;
+  color: #c572ea;
+}
+
+.initial-submit-text p {
+  font-weight: 500;
+  padding: 0 4px;
+  margin-bottom: 0px;
+}
+
+/* .results .button {
+  display: flex;
+  margin: 20px 0;
+}
+
+.results .button button {
+  margin: 0 155px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #351c74;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
+/* F O R M */
+form {
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#initialBox {
+  border: 1px solid #351c74;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#scoreSave {
+  margin: 10px 155px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #351c74;
+  border-radius: 5px;
+  border: 1px solid #351c74;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#scoreSave:hover {
+  color: #fff;
+  background: #c572ea;
+  border-color: #351c74;
 }

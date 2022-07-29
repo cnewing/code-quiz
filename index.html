@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Code Quiz</title>
   </head>
   <body>
@@ -22,9 +25,7 @@
       <div class="modal-list">
         <div class="info">
           <ol>
-            <li>
-              You will have <span>75 seconds</span> to complete the quiz
-            </li>
+            <li>You will have <span>75 seconds</span> to complete the quiz</li>
             <li>You cannot reselect any answers</li>
             <li>Once the time runs out, you cannot make a selection</li>
             <li>You cannot exit the quiz once it has started</li>
@@ -40,41 +41,63 @@
 
     <!-- Q U I Z  C O N T A I N E R -->
     <div class="quiz-box">
-          <header>
+      <header>
         <div class="title">Coding Quiz</div>
         <div class="timer">
           <div class="time-text">Time:</div>
-        <div class="timer-sec">75</div>
+          <div class="timer-sec">75</div>
         </div>
-          </header>
-            <section>
-              <!-- Q U E S T I O N -->
-              <div class="q-text">
-                <span>Arrays in JavaScript can be used to store ________. </span>
-              </div>
-              <!-- A N S W E R S -->
-              <div class="answers">
-                <div class="option">
-                  <span>1. numbers and strings</span>
-                  <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                  <span>2. other arrays</span>
-                  <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                  <span>3. booleans</span>
-                  <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                  <span>4. all of the above</span>
-                  <div class="icon tick"><i class="fas fa-check"></i></div>
-                </div>
-              </div>
+      </header>
+      <section>
+        <!-- Q U E S T I O N -->
+        <div class="q-text">
+          <span>Arrays in JavaScript can be used to store ________. </span>
+        </div>
+        <!-- A N S W E R S -->
+        <div class="answers">
+          <div class="option">
+            <span>1. numbers and strings</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span>2. other arrays</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span>3. booleans</span>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span>4. all of the above</span>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-            </section>
-
-            <!-- Q U I Z  B O X  F O O T E R -->
+    <!-- Q U I Z  R E S U L T  B O X -->
+    <div class="results">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete">Quiz Complete!</div>
+      <div class="score">Your Score</div>
+      <div class="initial-submit-text">
+        <p>Enter your initials</p>
+      </div>
+      <div class="initials">
+        <form action="">
+          <input type="text" id="initialBox" name="" value="" />
+          <input type="submit" id="scoreSave" value="Submit Score" />
+        </form>
+        <!--<form action="Submit">
+          <label for="initials"></label>
+        </form> -->
+      </div>
+      <!-- <div class="button">
+        <button class="submit-score">Submit Score</button>
+      </div> -->
+    </div>
 
     <script src="/script.js"></script>
   </body>
