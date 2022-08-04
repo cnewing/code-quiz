@@ -1,13 +1,24 @@
 # Code Quiz
 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+## Goal
+
+Create timed quiz using JavaScript that allows the use to store high scores with their initials.
+
+## Parameters
+
+When user selects a correct answer they move on to the next question. If user selects wrong answer then time is subracted. The game is over when time is up or all the questions have been answered.
+
+## Built with
+
+• HTML
+• CSS
+• JavaScript
+
+
+## Website
+
+## https://codingquizapp.netlify.app/
+
+## Contributions
+
+Made by Christa Newing
