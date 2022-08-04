@@ -19,6 +19,9 @@ When user selects a correct answer they move on to the next question. If user se
 
 ## https://codingquizapp.netlify.app/
 
+![Code Quiz](https://user-images.githubusercontent.com/89669465/182745599-850c38b2-d4e1-4c4a-be2c-01d1f4999c13.gif)
+
+
 ## Contributions
 
 Made by Christa Newing
