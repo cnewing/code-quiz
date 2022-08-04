@@ -2,13 +2,12 @@
 
 ## Goal
 
-Create timed quiz using JavaScript that allows the use to store high scores with their initials.
-
+Create a timed quiz using HTML, CSS, and JavaScript that allows the user to store their scores with their initials.
 ## Parameters
 
-When user selects a correct answer they move on to the next question. If user selects wrong answer then time is subracted. The game is over when time is up or all the questions have been answered.
+When the user selects a correct answer they move on to the next question. If the user selects the wrong answer, then time is subracted. The quiz is done when time has run out or all of the questions are answered.
 
-## Built with
+## Languages
 
 • HTML
 • CSS
